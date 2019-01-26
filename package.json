@@ -1,0 +1,38 @@
+{
+  "name": "start-template",
+  "version": "2.0.0",
+  "description": "Start HTML Template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "VolodymyrTz",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.18.5",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-clean-css": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-install": "^1.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-nunjucks-render": "^2.2.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-serve": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "node-bourbon": "^4.2.8",
+    "vinyl-ftp": "^0.5.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}

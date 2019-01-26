@@ -1,0 +1,49 @@
+.faq
+  position: relative
+  overflow: hidden
+  .heading
+    text-align: center
+  &__wrapper
+    width: 80%
+    margin: get-vw(50px) auto get-vw(40px)
+    overflow-y: scroll
+    height: 650px
+    position: relative
+    &::-webkit-scrollbar
+      width: get-vw(5px)
+    &::-webkit-scrollbar-thumb
+      border-radius: 50px
+      background: #757aab
+      transition: background .2s ease-in-out
+      padding: 0 get-vw(5px)
+      &:hover
+        background: #fff
+    &::-webkit-scrollbar-track
+      background: rgba(247,247,247,.2)
+      border: 4px solid transparent
+      background-clip: content-box   /* THIS IS IMPORTANT */
+  &__item
+    margin-bottom: get-vw(40px)
+  &__firstList
+    list-style-type: none
+    line-height: 1.7
+    li
+      font-size: 14px
+      color: #a7c3f2
+  &__secondList
+    padding-left: get-vw(30px)
+    list-style-type: none
+    line-height: 1.7
+  .snakeRotate
+    bottom: get-vw(10px)
+    &--sec
+      bottom: get-vw(250px)
+      left: get-vw(1670px)
+      transform: rotate(90deg)
+  .dots
+    &--1
+      top: get-vw(200px)
+    &--2
+      top: get-vw(550px)
+  .rectangle
+    top: get-vw(450px)

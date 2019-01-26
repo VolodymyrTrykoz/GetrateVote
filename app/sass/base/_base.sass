@@ -1,0 +1,106 @@
+html
+  overflow: hidden
+
+body
+  background-image: linear-gradient(120deg, rgba(23, 1, 76, 1) 0%, rgba(27, 63, 151, 1) 100%)
+  background-size: 100% 200%
+  font-family: 'Ubuntu', sans-serif
+  color: #fff
+  position: relative
+  -moz-user-select: none
+  -khtml-user-select: none
+  -webkit-user-select: none
+  transition: opacity .3s linear
+
+  &.readyState
+    visibility: hidden
+    opacity: 0
+
+
+  &.body-blurred
+    position: relative
+    overflow: hidden
+    &:after
+      content: ''
+      position: absolute
+      z-index: 2
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background: rgba(0,0,0,.4)
+      background-size: 200% 200%
+
+.container
+  width: 57vw
+  margin: 0 auto
+
+
+.btn
+  position: relative
+  display: inline-block
+  padding: get-vw(25px) get-vw(85px)
+  text-transform: uppercase
+  color: #fff
+  font-family: "Raleway-bold", sans-serif
+  font-size: get-vw(24px)
+  background-image: linear-gradient(350deg, #9714ca, #cd208e)
+  border: 1px solid rgba(247,247,247,.08)
+  box-shadow: 0px 0px 0px 0px rgba(153,20,202,0.4), 0px 0px 0px 7px rgba(153,20,202,0.4), 0px 0px 0px 14px rgba(153,20,202,0.2)
+  border-radius: 10px
+  transition: box-shadow .4s ease-in-out, transform .2s ease-in-out
+  outline: none
+  &:hover
+    box-shadow: 0px 0px 0px 7px rgba(153,20,202,0.4), 0px 0px 0px 14px rgba(153,20,202,0.2), 0px 0px 0px 14px rgba(153,20,202,0)
+  &:active
+    transform: translateY(2px)
+    box-shadow: 0px 0px 0px 0px rgba(153,20,202,0.2), 0px 0px 0px 7px rgba(153,20,202,0.2), 0px 0px 0px 14px rgba(153,20,202,0.1)
+
+.aqua
+  color: #2de2f7
+
+.dots
+  width: get-vw(130px)
+  position: absolute
+  &--1
+    top: get-vw(100px)
+    left: get-vw(-25px)
+  &--2
+    right: get-vw(-20px)
+    top: get-vw(30px)
+
+.heading
+  font-size: get-vw(36px)
+  font-weight: 500
+  @extend %textGrad
+
+.title
+    font-size: get-vw(20px)
+    margin-bottom: get-vw(22px)
+    font-weight: 500
+    color: #fff
+.text
+  color: #A7C3F2
+  font-size: 14px
+  line-height: 1.7
+  margin: get-vw(10px) 0
+  &--shift
+    padding-left: get-vw(20px)
+
+.snake
+    width: get-vw(115px)
+.snakeRotate
+  position: absolute
+  height: get-vw(115px)
+  left: get-vw(200px)
+  bottom: get-vw(0px)
+.rectangle
+  width: get-vw(50px)
+  height: get-vw(100px)
+  background: rgba(43,88,188,.1)
+  position: absolute
+  top: get-vw(300px)
+  left: 0
+
+
+

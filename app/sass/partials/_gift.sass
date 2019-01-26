@@ -1,0 +1,69 @@
+.gift
+  position: relative
+  overflow: hidden
+  &__wrapper
+    display: flex
+    margin: 50px 0 60px 0
+    justify-content: space-between
+  &__box
+    border-radius: 10px
+    &:first-child
+      width: 66%
+      padding: 40px
+      background-image: linear-gradient(-90deg,rgba(24,12,89,0) 30%, rgba(21,61,149,.3) 100%)
+    &:last-child
+      text-align: center
+      width: 33.31%
+      padding: 40px 20px 30px 20px
+      background-image: linear-gradient(0deg, #180C59, #1B3D95)
+      .heading
+        font-size: get-vw(28px)
+    .btn
+      text-transform: none
+      border-radius: 7px
+      font-family: "Raleway-bold", sans-serif
+      font-size: 18px
+      padding: get-vw(18.5px) get-vw(75px)
+      transition: box-shadow .4s ease-in-out, transform .2s ease-in-out
+      box-shadow: 0px 0px 0px 0px rgba(153,20,202,0),  0 0 0 5px rgba(153,20,202,.4), 0 0 0 10px rgba(153,20,202,.2)
+      &:hover
+        box-shadow: 0px 0px 0px 5px rgba(153,20,202,0.4), 0px 0px 0px 10px rgba(153,20,202,0.2), 0px 0px 0px 0px rgba(153,20,202,0)
+      &:active
+        transform: translateY(2px), translateX(-50%)
+        box-shadow: 0px 0px 0px 0px rgba(153,20,202,0),  0 0 0 5px rgba(153,20,202,.4), 0 0 0 10px rgba(153,20,202,.2)
+    img
+      position: relative
+      right: get-vw(30px)
+      width: get-vw(320px)
+      margin: 0 0 35px
+  &__item
+    display: flex
+    margin-bottom: 30px
+  &__step
+    color: #2de2f7
+    font-size: get-vw(16px)
+    font-weight: bold
+    margin-bottom: 5px
+  &__action
+    font-size: get-vw(32px)
+    font-weight: 400
+  &__left
+    width: 51%
+  &__right
+    width: 49.5%
+  &__descr
+    position: relative
+    font-size: 14px
+    color: #A7C3F2
+    padding-top: get-vw(35px)
+    &:before
+      content: ''
+      position: absolute
+      width: get-vw(60px)
+      height: 1px
+      left: get-vw(-72px)
+      top: get-vw(40px)
+      background-image: linear-gradient(90deg, #047CED, #2DE2F7)
+      opacity: .5
+  &__conditions
+    margin: 15px 0 20px

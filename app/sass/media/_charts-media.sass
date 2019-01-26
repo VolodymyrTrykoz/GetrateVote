@@ -1,0 +1,83 @@
+@media screen and (max-width: 1024px)
+  .charts
+    &__heading
+      margin-top: 7vw
+      flex-direction: column
+      align-items: flex-start
+    &__markPred
+      margin-top: 8vw
+      font-size: 2vw
+    &__markReal
+      font-size: 2vw
+      margin-bottom: 3vw
+    &__table
+      height: 60vw
+      left: -5vw
+    .btn
+      margin: 5vw 0
+      position: absolute
+      top: 16vw
+      left: 53vw
+      font-size: 2vw
+      padding: 2vw 5vw
+    .dots--1
+      display: none
+
+
+@media screen and (max-width: 768px)
+  .charts
+    .btn
+      position: absolute
+      top: 16vw
+      left: 53vw
+      font-size: 2vw
+    &__markPred
+      font-size: 2.5vw
+    &__markReal
+      font-size: 2.5vw
+    &__table
+      height: 75vw
+
+@media screen and (max-width: 450px)
+  .charts
+    padding-top: 40px
+    margin-bottom: 0
+    .heading
+      font-size: 7vw
+    &__markPred
+      font-size: 17px
+      margin: 40px 0 0 30px
+      &:before
+        height: 3px
+        left: -38px
+        width: 28px
+    &__markReal
+      font-size: 17px
+      margin: 10px 0 0 30px
+      &:before
+        left: -38px
+        width: 28px
+    .btn
+      margin: 100px 0 50px
+      padding: 4vw 14vw
+      font-size: 5vw
+      position: relative
+      top: 95vw
+      left: 50%
+      transform: translateX(-50%)
+    &__table
+      height: 350px
+      top: -30vw
+      left: -12vw
+      width: 115%
+    .dots
+      &--1
+        display: none
+      &--2
+        top: 15vw
+        left: 70vw
+
+@media screen and (max-width: 320px)
+  .charts
+    .btn
+      top: 110vw

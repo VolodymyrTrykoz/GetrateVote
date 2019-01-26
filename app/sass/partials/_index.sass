@@ -1,0 +1,74 @@
+.first
+  position: relative
+  overflow: hidden
+  padding-top: get-vw(50px)
+  &__heading
+    width: 80%
+    font-size: 3.05vw
+    margin: 15px 0
+    @extend %textGrad
+  &__hash
+    font-size: get-vw(50px)
+    font-family: 'Raleway-light', sans-serif
+  .btn
+    margin: get-vw(50px) 0 get-vw(80px)
+  &__steps
+    display: flex
+    justify-content: space-between
+    background-image: linear-gradient(-120deg, #180c59, #1b3f97)
+    padding: get-vw(10px) get-vw(20px) get-vw(15px) get-vw(20px)
+    margin-bottom: get-vw(60px)
+    margin-top: 27px
+    border-radius: 10px
+    box-shadow: 0 get-vw(20px) get-vw(40px) rgba(24,12,89, .4)
+    width: 102%
+    position: relative
+    left: get-vw(-10px)
+  &__item
+    width: 24%
+    position: relative
+    &:last-of-type
+      width: 20%
+    &:not(:first-child) > .first__numb
+      position: relative
+      &:before
+        position: absolute
+        content: ''
+        top: 95%
+        transform: translateY(-50%)
+        left: get-vw(-20px)
+        width: 1px
+        height: get-vw(80px)
+        opacity: .5
+        background-image: linear-gradient(45deg, #047CED, #2DE2F7)
+    &:nth-child(3)
+      width: 23%
+  &__img
+    width: get-vw(250px)
+    position: absolute
+    top: -2.5vw
+    left: -2vw
+
+  &__numb
+    color: #2de2f7
+    font-size: get-vw(48px)
+    font-weight: 600
+
+  &__descr
+    font-size: get-vw(17px)
+    font-weight: 500
+  &__getrate
+    position: absolute
+    z-index: -1
+    bottom: get-vw(90px)
+    width: get-vw(900px)
+  &__illustration
+    position: absolute
+    z-index: -1
+    top: get-vw(40px)
+    right: get-vw(100px)
+    width: get-vw(890px)
+    height: auto
+
+
+

@@ -1,0 +1,62 @@
+<!-- index.html/nunjucks -->
+{% extends "layout.html" %}
+{% block content %}
+{% include "partials/grid.html" %}
+{% include "partials/header.html" %}
+<div class="predict__popUp invisible">
+    <div class="predict__inputWrapper">
+        <h3 data-translatable class="heading">Время предсказаний! // Час зробити прогноз!</h3>
+        <p data-translatable>А теперь предскажи, какой будет средний по Киеву курс продажи доллара на 12:00 выбранной даты и сразу поделись своим предсказанием в Facebook! // А тепер зроби прогноз, який буде средній по Києву курс продажу долара на 12:00 обраної дати та одразу поділись своїм прогнозом в Facebook! </p>
+        <img src="./img/tablo.png" alt="" class="predict__inputBg predict__inputBg--1">
+        <img src="./img/tablo.png" alt="" class="predict__inputBg predict__inputBg--2">
+        <img src="./img/tablo.png" alt="" class="predict__inputBg predict__inputBg--3">
+        <img src="./img/tablo.png" alt="" class="predict__inputBg predict__inputBg--4">
+        <input class="predict__input" type="text" autofocus>
+        <button data-translatable class="btn predict__btn" disabled>Предсказание готово // Прогноз готовий</button>
+    </div>
+</div>
+
+    <section class="calendar">
+    <div class="container">
+        <div class="calendar__wrapper">
+            <h2 data-translatable class="calendar__heading">Выбери дату, на которую будешь делать предсказание // Обери дату, на яку будеш робити прогноз</h2>
+            <a data-translatable href="charts.html" class="btn">Предсказания участников // Прогноз учасників</a>
+        </div>
+    </div>
+        <div class="rectangle"></div>
+        <img src="./img/svg/dots.svg" alt="svg" class="dots dots--1">
+        <img src="./img/svg/dots.svg" alt="svg" class="dots dots--2">
+        <img src="./img/svg/snake-op.svg" alt="svg" class="snakeRotate">
+        <img src="./img/svg/snake-op.svg" alt="svg" class="snakeRotate snakeRotate--sec">
+        <img src="./img/svg/snake-op.svg" alt="svg" class="snakeRotate snakeRotate--th">
+</section>
+    <div class="wrapper">
+        <div class="custom-calendar-wrap custom-calendar-full">
+            <div class="custom-header">
+                <h3 class="custom-month-year">
+                    <span id="custom-month" class="custom-month"></span>
+                    <span id="custom-year" class="custom-year"></span>
+                    <nav>
+                        <span id="custom-prev" class="custom-prev"></span>
+                        <span id="custom-next" class="custom-next"></span>
+                        <span id="custom-current" class="custom-current" title="Got to current date"></span>
+                    </nav>
+                </h3>
+            </div>
+            <div id="calendar" class="fc-calendar-container"></div>
+        </div>
+    </div>
+
+{% include "partials/footer.html" %}
+<script src='libs/jquery-3.3.1/jquery-3.3.1.min.js'></script>
+<script src='libs/gsap/src/minified/TweenMax.min.js'></script>
+<script src='libs/Calendario/js/jquery.calendario.js'></script>
+<script src='libs/Calendario/js/data.js'></script>
+<script src='libs/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js'></script>
+<script src='libs/axios-master/dist/axios.js'></script>
+<script src='libs/shepherd-master/src/js/Popper.js'></script>
+<script src='libs/shepherd-master/src/js/shepherd.js'></script>
+<script src='libs/dom-i18n/dom-i18n.js'></script>
+<script src='js/scripts.min.js' defer></script>
+<script src='js/calendar.js' defer></script>
+{% endblock %}

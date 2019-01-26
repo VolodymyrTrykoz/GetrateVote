@@ -1,0 +1,29 @@
+[
+  {
+    "month": {
+      "ua": "Жовтень",
+      "ru": "Октябрь"
+    },
+    "winner": [
+      {
+        "day": "01.10",
+        "rate": "28.21",
+        "name": "Дарья Мазальцева",
+        "link": "https://www.facebook.com/dashaswec"
+      },
+      {
+        "day": "02.10",
+        "rate": "28.27",
+        "name": "Andrey Zadorozhniy",
+        "link": "https://www.facebook.com/andrey.zadorozhniy.5"
+      },
+      {
+        "day": "03.10",
+        "rate": "28.32",
+        "name": "Yuliya Bezobchuk",
+        "link": "https://www.facebook.com/profile.php?id=100009616792473"
+      }
+    ]
+  }
+
+]

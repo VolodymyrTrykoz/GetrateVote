@@ -1,0 +1,97 @@
+.charts
+  padding-top: get-vw(50px)
+  margin-bottom: 50px
+  position: relative
+  &__heading
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__mark
+    margin: get-vw(-10px) 0 0 get-vw(50px)
+    &Pred
+      position: relative
+      font-size: get-vw(14px)
+      &:before
+        content: ''
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: get-vw(-80px)
+        width: get-vw(60px)
+        height: get-vw(4px)
+        background: linear-gradient(to right,#047ced 0,#2de2f7 100%)
+    &Real
+      position: relative
+      top: get-vw(10px)
+      font-size: get-vw(14px)
+      &:before
+        content: ''
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: get-vw(-80px)
+        width: get-vw(60px)
+        height: 3px
+        background: linear-gradient(to right,#AA137C 0, #F444BC 100%)
+
+  .btn
+    text-transform: none
+    border-radius: 7px
+    font-family: "Raleway-bold", sans-serif
+    font-size: 18px
+    padding: get-vw(18.5px) get-vw(75px)
+    transition: box-shadow .4s ease-in-out, transform .2s ease-in-out
+    box-shadow: 0px 0px 0px 0px rgba(153,20,202,0),  0 0 0 5px rgba(153,20,202,.4), 0 0 0 10px rgba(153,20,202,.2)
+    &:hover
+      box-shadow: 0px 0px 0px 5px rgba(153,20,202,0.4), 0px 0px 0px 10px rgba(153,20,202,0.2), 0px 0px 0px 0px rgba(153,20,202,0)
+    &:active
+      transform: translateY(2px), translateX(-50%)
+      box-shadow: 0px 0px 0px 0px rgba(153,20,202,0),  0 0 0 5px rgba(153,20,202,.4), 0 0 0 10px rgba(153,20,202,.2)
+  &__table
+    position: relative
+    left: get-vw(-35px)
+    width: 103.5%
+    height: 650px
+    padding-top: get-vw(40px)
+  .snakeRotate
+    bottom: get-vw(600px)
+    transform: rotate(90deg)
+    &--sec
+      bottom: get-vw(250px)
+      left: get-vw(1800px)
+      transform: rotate(180deg)
+
+  .dots
+    &--1
+      top: get-vw(500px)
+      left: get-vw(200px)
+    &--2
+      top: get-vw(150px)
+      left: get-vw(1650px)
+  .rectangle
+    top: get-vw(250px)
+    height: get-vw(200px)
+
+.shepherd-element
+  &[x-placement^=top]
+    animation: opacity .5s ease-in-out
+    .popper__arrow
+      bottom: get-vw(-10px)
+      left: get-vw(170px)
+  &[x-placement^=bottom]
+    animation: opacity .5s ease-in-out
+    .popper__arrow
+      top: -10px
+
+.position
+  top: get-vw(200px)!important
+
+
+
+@keyframes opacity
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+

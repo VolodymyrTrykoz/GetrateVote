@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Dekurs</title>
+    <meta charset="utf-8">
+    <meta property="fb:app_id"                 content="2160146270936955" />
+    <meta property="og:url"                    content="https://dekurs.com.ua" >
+    <meta property="og:type"                   content="website" />
+    <meta property="og:site_name"              content="Dekurs"/>
+    <meta property="og:title"                  content="Угадай курс и получи выигрыш на Dekurs!" />
+    <meta property="og:description"            content="Делай предсказания курса доллара на Dekurs за призы!" />
+    <meta property="og:locale"                 content="ru_RU"/>
+    <meta property="og:image"                  content="https://dekurs.com.ua/quiz/img/gr-share-ru.png">
+    <meta property="og:image:type"             content="image/png" />
+    <meta property="og:image:width"            content="1200" />
+    <meta property="og:image:height"           content="630" />
+    <meta name="viewport"                      content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="shortcut icon"                  href="img/favicon.ico?1" type="image/x-icon"/>
+    <link rel="stylesheet"                     href="libs/Calendario/css/calendar.css"/>
+    <link rel="stylesheet"                     href="libs/Calendario/css/custom_1.css"/>
+    <link rel="stylesheet"                     href="css/main.min.css"/>
+
+</head>
+<body class="readyState">
+
+    <div class="grid__wrapper">
+        <div class="grid grid1"></div>
+        <div class="grid grid2"></div>
+        <div class="grid grid3"></div>
+        <div class="grid grid4"></div>
+        <div class="grid grid5"></div>
+        <div class="grid grid6"></div>
+    </div>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="./img/svg/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="header__nav">
+                <nav class="nav__list">
+                    <a data-translatable href="gift.html" class="nav__item">Твой приз // Твій приз</a>
+                    <a data-translatable href="charts.html" class="nav__item">Предсказания участников // Передбачення учасників</a>
+                    <a data-translatable href="winners.html" class="nav__item">Победители // Переможці</a>
+                </nav>
+            </div>
+            <div class="header__menuWrapper">
+                <div class="header__menu">
+                    <div class="line line--1"></div>
+                    <div class="line line--2"></div>
+                    <div class="line line--3"></div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menu__wrapper">
+                    <div class="menu__text">
+                        <p class="name"><span class="user__name"></span></p>
+                        <button data-translatable class="logOut invisible">Выйти // Вийти</button>
+                    </div>
+                    <nav class="menu__nav">
+                        <a data-translatable class="menu__item" href="index.html">Главная // Головна</a>
+                        <a data-translatable class="menu__item" href="gift.html">Твой приз // Твій приз</a>
+                        <a data-translatable class="menu__item" href="charts.html">Предсказания участников // Передбачення учасників</a>
+                        <a data-translatable class="menu__item" href="winners.html">Победители // Переможці</a>
+                        <a data-translatable class="menu__item" href="faq.html">Вопрос-Ответ // Часті питання</a>
+                        <a data-translatable class="menu__item" href="rules.html">Правила</a>
+                        <a data-translatable class="menu__item" href="https://dekurs.com.ua/" target="_blank">Dekurs</a>
+                    </nav>
+                    <div class="lang__switch">
+                        <p data-translatable class="lang">Язык // Мова</p>
+                        <a href="#" class="ru">Русский</a>
+                        <a href="#" class="ua">Українська</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <section class="charts">
+            <div class="container">
+                <div class="charts__heading">
+                    <h3 data-translatable class="heading">Предсказания участников // Передбачення учасників</h3>
+                    <div class="charts__mark">
+                        <div data-translatable class="charts__markPred">Предсказания // Передбачення</div>
+                        <div data-translatable class="charts__markReal">Реальный курс // Реальний курс</div>
+                    </div>
+                    <a data-translatable href="calendar.html" class="btn">Сделать ставку // Зробити ставку</a>
+                </div>
+                <div id="charts" class="charts__table"></div>
+            </div>
+        <div class="rectangle"></div>
+        <img src="./img/svg/dots.svg" alt="svg" class="dots dots--1">
+        <img src="./img/svg/dots.svg" alt="svg" class="dots dots--2">
+        <img src="./img/svg/snake-op.svg" alt="svg" class="snakeRotate">
+        <img src="./img/svg/snake-op.svg" alt="svg" class="snakeRotate snakeRotate--sec">
+
+    </section>
+<footer class="footer">
+    <div class="container">
+        <nav class="footer__nav">
+            <div class="footer__item">
+                <a data-translatable href="faq.html">Вопрос-Ответ // Часті питання</a>
+            </div>
+            <div class="footer__item">
+                <a href="rules.html">Правила</a>
+            </div>
+            <div class="footer__item">
+                <a href="https://dekurs.com.ua/" target="_blank">Dekurs</a>
+            </div>
+        </nav>
+    </div>
+</footer>
+    <script src='libs/jquery-3.3.1/jquery-3.3.1.min.js'></script>
+    <script src='libs/gsap/src/minified/TweenMax.min.js'></script>
+    <script src='libs/axios-master/dist/axios.js'></script>
+    <script src='libs/shepherd-master/src/js/Popper.js'></script>
+    <script src='libs/shepherd-master/src/js/shepherd.js'></script>
+    <script src="libs/highcharts/highcharts.js"></script>
+    <script src='libs/dom-i18n/dom-i18n.js'></script>
+    <script src='js/scripts.min.js'></script>
+    <script src='js/charts.js'></script>
+
+
+</body>
+</html>

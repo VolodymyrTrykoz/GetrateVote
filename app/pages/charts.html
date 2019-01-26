@@ -1,0 +1,36 @@
+<!-- index.html/nunjucks -->
+{% extends "layout.html" %}
+{% block content %}
+{% include "partials/grid.html" %}
+{% include "partials/header.html" %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <section class="charts">
+            <div class="container">
+                <div class="charts__heading">
+                    <h3 data-translatable class="heading">Предсказания участников // Передбачення учасників</h3>
+                    <div class="charts__mark">
+                        <div data-translatable class="charts__markPred">Предсказания // Передбачення</div>
+                        <div data-translatable class="charts__markReal">Реальный курс // Реальний курс</div>
+                    </div>
+                    <a data-translatable href="calendar.html" class="btn">Сделать ставку // Зробити ставку</a>
+                </div>
+                <div id="charts" class="charts__table"></div>
+            </div>
+        <div class="rectangle"></div>
+        <img src="./img/svg/dots.svg" alt="svg" class="dots dots--1">
+        <img src="./img/svg/dots.svg" alt="svg" class="dots dots--2">
+        <img src="./img/svg/snake-op.svg" alt="svg" class="snakeRotate">
+        <img src="./img/svg/snake-op.svg" alt="svg" class="snakeRotate snakeRotate--sec">
+
+    </section>
+{% include "partials/footer.html" %}
+    <script src='libs/jquery-3.3.1/jquery-3.3.1.min.js'></script>
+    <script src='libs/gsap/src/minified/TweenMax.min.js'></script>
+    <script src='libs/axios-master/dist/axios.js'></script>
+    <script src='libs/shepherd-master/src/js/Popper.js'></script>
+    <script src='libs/shepherd-master/src/js/shepherd.js'></script>
+    <script src="libs/highcharts/highcharts.js"></script>
+    <script src='libs/dom-i18n/dom-i18n.js'></script>
+    <script src='js/scripts.min.js'></script>
+    <script src='js/charts.js'></script>
+{% endblock %}

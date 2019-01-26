@@ -1,0 +1,54 @@
+<!-- index.html/nunjucks -->
+{% extends "layout.html" %}
+{% block content %}
+{% include "partials/grid.html" %}
+{% include "partials/header.html" %}
+    <section class="first">
+        <div class="rectangle"></div>
+        <img src="./img/svg/dots.svg" alt="svg" class="dots dots--1">
+        <img src="./img/svg/dots.svg" alt="svg" class="dots dots--2">
+        <div class="container">
+                <img src="./img/svg/snake.svg" alt="svg" class="snake">
+            <h1 data-translatable class="first__heading">Каждый день получай призы от Dekurs за предсказание курса доллара! // Щодня отримуй призи від Dekurs за передбачення курсу долара!</h1>
+            <p data-translatable class="first__hash">#курснавыигрыш // #курснавиграш</p>
+            <a data-translatable href="calendar.html" class="btn logIn">Вход через Facebook // Вхід через Facebook </a>
+            <div class="first__steps">
+                <div class="first__item">
+                    <div class="first__numb">01</div>
+                    <div class="first__descr">
+                        Авторизуйся через <br> Facebook
+                    </div>
+                </div>
+                <div class="first__item">
+                    <div class="first__numb">02</div>
+                    <div data-translatable class="first__descr">
+                       Выбери дату и сделай предсказание // Обери дату та зроби передбачення
+                    </div>
+                </div>
+                <div class="first__item">
+                    <div class="first__numb">03</div>
+                    <div data-translatable class="first__descr">
+                       Делись в Facebook и выигрывай призы // Ділись у Facebook та вигравай призи
+                    </div>
+                </div>
+                <div class="first__item">
+                    <img class="first__img" src="./img/gift.png" alt="">
+                </div>
+            </div>
+        </div>
+        <img src="./img/svg/getrate.svg" alt="svg" class="first__getrate">
+        <img src="./img/illustration.png" alt="png" class="first__illustration">
+        <img src="./img/svg/snake-op.svg" alt="svg" class="snake snakeRotate">
+    </section>
+
+
+{% include "partials/footer.html" %}
+    <script src='libs/jquery-3.3.1/jquery-3.3.1.min.js'></script>
+    <script src='libs/gsap/src/minified/TweenMax.min.js'></script>
+    <script src='libs/shepherd-master/src/js/Popper.js'></script>
+    <script src='libs/shepherd-master/src/js/shepherd.js'></script>
+    <script src='libs/axios-master/dist/axios.js'></script>
+    <script src='libs/dom-i18n/dom-i18n.js'></script>
+    <script src='js/scripts.min.js'></script>
+    <script src='js/index.js'></script>
+{% endblock %}

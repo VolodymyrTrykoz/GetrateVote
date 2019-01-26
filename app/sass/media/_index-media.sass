@@ -1,0 +1,232 @@
+@media screen and (max-width: 1600px)
+  .first
+    &__steps
+      padding: get-vw(25px) get-vw(50px) get-vw(25px) get-vw(30px)
+
+@media screen and (max-width: 1024px)
+  .first
+    overflow: auto
+    overflow-x: hidden
+    &__heading
+      font-size: 7vw
+      width: 100%
+    &__illustration
+      width: 65vw
+      top: 35vw
+    &__hash
+      font-size: 5vw
+    &__steps
+      width: 100%
+    &__descr
+      font-size: 2vw
+    &__numb
+      font-size: 3vw
+    &__img
+      width: 20vw
+      top: -5vw
+    &__getrate
+      bottom: 12.6vw
+    &__item
+      width: 25%
+      &:not(:first-child)>.first__numb:before
+        top: 130%
+        left: -1.5vw
+        height: 8vw
+    &__illustration
+      right: 0
+    .snake
+      margin-top: 90px
+      width: 15vw
+    .btn
+      font-size: 3vw
+      padding: 2vw 8vw
+      margin: 10vw 0 24vw
+      top: 10vw
+    .dots
+      &--1
+       display: none
+      &--2
+        top: 20.5vw
+        right: 6vw
+    .snakeRotate
+      height: 15vw
+      left: 10vw
+      bottom: 45vw
+
+@media screen and (max-width: 768px)
+  .first
+    overflow: auto
+    overflow-x: hidden
+    &__hash
+      font-size: 7vw
+    &__illustration
+      position: relative
+      top: -130vw
+      right: 6vw
+      width: 112vw
+    &__steps
+      width: 105%
+      top: 70vw
+      flex-direction: column
+      left: -2vw
+      padding-bottom: 5vw
+      margin-bottom: 0
+    &__descr
+      font-size: 5vw
+    &__numb
+      font-size: 10vw
+      font-weight: 700
+      padding-right: 3.5vw
+    &__item
+      display: flex
+      align-items: center
+      padding: 5vw 2vw
+      width: 100%
+      &:first-of-type
+        .first__numb
+          padding-left: 5px
+          padding-right: 8px
+
+      &:first-of-type
+        width: 100%
+      &:last-of-type
+        width: 100%
+        height: 53vw
+      &:nth-child(2)
+        left: .5vw
+      &:nth-child(3)
+        padding: 3vw 2vw
+        width: 100%
+      &:not(:first-child) > .first__numb
+        &:before
+          top: -30%
+          left: 15vw
+          width: 70px
+          height: 1px
+          background: linear-gradient(to right, #2de2f7 0, #047ced 100%)
+    &__img
+      left: 5vw
+      top: 5vw
+      width: 70vw
+    &__getrate
+      bottom: 210vw
+      width: 66vw
+    .btn
+      margin: 5vw 0 1vw
+      padding: 4vw 12vw
+      top: 218vw
+      left: 50%
+      transform: translateX(-50%)
+      font-size: 3vw
+    .snake
+      margin-top: 50px
+      width: 15vw
+      &Rotate
+        display: none
+    .dots--1
+      display: none
+    .dots--2
+      top: 49vw
+      right: -16vw
+    h1
+      margin: 15px 0
+@media screen and (max-width: 450px)
+  .first
+    overflow: auto
+    overflow-x: hidden
+    &__heading
+      width: 100%
+      font-size: 11vw
+    &__hash
+      font-size: 9vw
+    &__illustration
+      position: relative
+      top: -220vw
+      right: 6vw
+      width: 112vw
+    &__steps
+      width: 105%
+      top: 60vw
+      flex-direction: column
+      left: -2vw
+      padding-bottom: 5vw
+      margin-bottom: 0
+    &__descr
+      font-size: 5.6vw
+    &__numb
+      font-size: 15vw
+      font-weight: 700
+      padding-right: 3.5vw
+    &__item
+      padding: 5vw 2vw
+      &:nth-child(2)
+        left: .5vw
+      &:nth-child(3)
+        padding: 3vw 2vw
+      &:not(:first-child) > .first__numb
+        &:before
+          top: -25%
+          left: 20vw
+          width: 100px
+          height: 1px
+          background: linear-gradient(to right, #2de2f7 0, #047ced 100%)
+    &__img
+        top: 2vw
+        left: 5vw
+    &__getrate
+      bottom: 204vw
+      width: 66vw
+    .btn
+      font-size: 4vw
+      margin: 5vw 0 1vw
+      padding: 4vw 14vw
+      top: 285vw
+
+    .snake
+      margin-top: 50px
+      width: 25vw
+      &Rotate
+        display: none
+    .dots--1
+      display: none
+    .dots--2
+      top: 49vw
+      right: -16vw
+    h1
+      margin: 15px 0
+@media screen and (max-width: 414px)
+  .first
+    &__item
+      &:last-of-type
+        height: 57vw
+    .btn
+      top: 237vw
+    &__illustration
+      top: -163vw
+    &__getrate
+      bottom: 250vw
+    &__img
+      width: 80vw
+      top: 0
+      left: 0
+
+@media screen and (max-width: 375px)
+  .first
+    &__img
+      left: 1vw
+    .btn
+      top: 236vw
+
+@media screen and (max-width: 320px)
+  .first
+    &__getrate
+      bottom: 290vw
+    .btn
+      top: 250vw
+      margin: 5vw 0 4vw
+    &__img
+      left: -2vw
+      width: 90vw
+    &__item
+      &:last-of-type
+        height: 65vw

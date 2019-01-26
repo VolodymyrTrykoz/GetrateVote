@@ -1,0 +1,112 @@
+@media screen and (max-width: 1024px)
+  .header
+    &__logo
+      img
+        width: 20vw
+    &__wrapper
+      padding-top: 2vw
+    &__nav
+      a
+        font-size: 2vw
+    .menu
+      width: 60%
+      &__nav
+        a
+          font-size: 4vw
+      .name
+        font-size: 3vw
+      .logOut
+        font-size: 3vw
+      &__wrapper
+        padding-top: 10vw
+      .lang__switch
+        top: 120vw
+        .lang
+          font-size: 2.5vw
+        a
+          font-size: 2.5vw
+          &:first-of-type:after
+            height: 25px
+            right: .7vw
+@media screen and (max-width: 768px)
+  .header
+    &__nav
+      display: none
+      a
+        font-size: 2.1vw
+    .menu
+      width: 55%
+      &__nav
+        a
+          font-size: 4vw
+      .name
+        font-size: 3.2vw
+      .lang__switch a
+        font-size: 3vw
+
+
+@media screen and (max-width: 450px)
+  .header
+    &__logo
+      padding: 8vw 0 1vw 7vw
+      img
+        width: 28vw
+    &__menu
+      .line--3
+        left: 0
+      &Wrapper
+        margin: 5vw 7vw 0 0
+    .menu
+      width: 100%
+      &__nav a
+        font-size: 6.875vw
+      &__wrapper
+        padding: 20vw 0 0 10vw
+      &__item
+        &:last-child
+          color: #2DE2F7
+        &:before
+          width: 18px
+          left: -10vw
+      .lang__switch
+        position: relative
+        top: 5vw
+        a
+          font-size: 4vw
+        a:first-of-type
+          padding-right: 4vw
+          &:after
+            height: 20px
+        .lang
+          font-size: 5vw
+      .name
+        font-size: 5vw
+      .logOut
+        font-size: 5vw
+  .grid__wrapper
+    position: fixed
+    z-index: -1
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    .grid
+      position: absolute
+      width: 1px
+      height: 100%
+      background-color: rgba(247,247,247,0.1)
+      z-index: -1
+      &1
+        left: get-vw(80px)
+      &2
+        display: none
+      &3
+        left: get-vw(960px)
+      &4
+        display: none
+      &5
+        left: get-vw(1840px)
+      &6
+        display: none
+
+

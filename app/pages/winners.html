@@ -1,0 +1,28 @@
+<!-- index.html/nunjucks -->
+{% extends "layout.html" %}
+{% block content %}
+{% include "partials/grid.html" %}
+{% include "partials/header.html" %}
+<section class="winners">
+   <div class="container">
+       <h3 data-translatable class="heading">Средний курс доллара в Киеве угадал: // Середній курс долара в Києві вгадав: </h3>
+       <div class="winners__wrapper">
+
+       </div>
+   </div>
+    <div class="rectangle"></div>
+    <img src="./img/svg/dots.svg" alt="svg" class="dots dots--1">
+    <img src="./img/svg/dots.svg" alt="svg" class="dots dots--2">
+    <img src="./img/svg/snake-op.svg" alt="svg" class="snakeRotate">
+    <img src="./img/svg/snake-op.svg" alt="svg" class="snakeRotate snakeRotate--sec">
+</section>
+
+
+{% include "partials/footer.html" %}
+<script src='libs/jquery-3.3.1/jquery-3.3.1.min.js'></script>
+<script src='libs/gsap/src/minified/TweenMax.min.js'></script>
+<script src="libs/axios-master/dist/axios.js"></script>
+<script src='libs/dom-i18n/dom-i18n.js'></script>
+<script src='js/scripts.min.js'></script>
+<script src='js/winners.js'></script>
+{% endblock %}

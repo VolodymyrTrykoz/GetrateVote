@@ -1,0 +1,88 @@
+.winners
+  text-align: center
+  margin-top: get-vw(20px)
+  position: relative
+  overflow: hidden
+  &__wrapper
+    width: 60%
+    margin: get-vw(50px) auto get-vw(20px)
+    padding-bottom: get-vw(15px)
+    overflow-y: scroll
+    height: 650px
+    position: relative
+    &::-webkit-scrollbar
+      width: get-vw(5px)
+    &::-webkit-scrollbar-thumb
+      border-radius: 50px
+      background: #757aab
+      transition: background .2s ease-in-out
+      padding: 0 get-vw(5px)
+      &:hover
+        background: #fff
+    &::-webkit-scrollbar-track
+      background: rgba(247,247,247,.2)
+      border: 4px solid transparent
+      background-clip: content-box   /* THIS IS IMPORTANT */
+  &__month
+    text-align: left
+    text-transform: uppercase
+    color: #2de2f7
+    font-size: get-vw(16px)
+    padding: get-vw(15px) 0 get-vw(25px)
+    &Wrap
+      padding: 0 0 get-vw(60px)
+      &:last-child
+        padding-bottom: get-vw(30px)
+  &__item
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    background-image: linear-gradient(120deg, #1b3f97, #180c59)
+    background-size: 200%
+    background-position: 50%
+    padding: get-vw(16px) get-vw(35px)
+    border-radius: 5px
+    margin: get-vw(5px) get-vw(30px) get-vw(5px) 0
+    transition: box-shadow .2s ease-in-out, transform .2s ease-in-out, background-position .2s ease-in-out
+    box-shadow: 0 15px 30px rgba(24,12,89,.0)
+    color: #a7c3f2
+    div
+      font-size: get-vw(15px)
+    &:hover
+      transform: translateZ(1px)
+      box-shadow: 0 20px 40px rgba(24,12,89,.6)
+      background-position: 0
+  &__name
+    width: 50%
+    text-align: left
+    color: white
+  &__numb
+    color: #A7C3F2
+    width: 25%
+    position: relative
+    padding-left: get-vw(20px)
+    &:before
+      position: absolute
+      content: ''
+      top: get-vw(-5px)
+      left: get-vw(10px)
+      width: 1px
+      height: get-vw(30px)
+      background-image: linear-gradient(0deg, #2de2f7,#047ced)
+    &--rate
+      padding-left: get-vw(40px)
+  .snakeRotate
+    bottom: get-vw(10px)
+    &--sec
+      bottom: get-vw(250px)
+      left: get-vw(1670px)
+      transform: rotate(90deg)
+  .dots
+    &--1
+      top: get-vw(400px)
+    &--2
+      top: get-vw(650px)
+  .rectangle
+    top: 5vw
+
+

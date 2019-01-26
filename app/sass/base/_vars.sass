@@ -1,0 +1,41 @@
+// placeholders
+%textGrad
+  background: linear-gradient(to right,#047ced 0,#2de2f7 100%)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+
+%transition
+  transition: 0.2s linear
+
+// extends
+%vam
+  display: block
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+
+%ham
+  display: block
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+
+%relative
+  position: relative
+
+
+@function get-vw($object)
+  $vw: (1920 * 0.01) * 1px
+  @return ($object / $vw) * 1vw
+
+@function get-vh($object)
+  $vh: (974 * 0.01) * 1px
+  @return ($object / $vh) * 1vh
+
+@function get-percents($object)
+  @return ($object * 100) / 1920px + %
+
+@function get-rem($pixels, $context: $browser-context)
+  @return #{$pixels/$context}rem
+
+

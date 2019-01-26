@@ -1,0 +1,298 @@
+.calendar
+  padding-top: get-vw(18px)
+  position: relative
+  &__heading
+    @extend %textGrad
+    width: 60%
+    font-size: get-vw(36px)
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+  .btn
+    padding: get-vw(18.5px) get-vw(28px)
+    width: 300px
+    text-align: center
+    font-size: get-vw(18px)
+    text-transform: none
+    border-radius: 7px
+    transition: box-shadow .4s ease-in-out, transform .2s ease-in-out
+    box-shadow: 0px 0px 0px 0px rgba(153,20,202,0),  0 0 0 5px rgba(153,20,202,.4), 0 0 0 10px rgba(153,20,202,.2)
+    &:hover
+      box-shadow: 0px 0px 0px 5px rgba(153,20,202,0.4), 0px 0px 0px 10px rgba(153,20,202,0.2), 0px 0px 0px 0px rgba(153,20,202,0)
+    &:active
+      transform: translateY(2px)
+      box-shadow: 0px 0px 0px 0px rgba(153,20,202,0),  0 0 0 5px rgba(153,20,202,.4), 0 0 0 10px rgba(153,20,202,.2)
+  .snakeRotate
+    bottom: -35vw
+    transform: rotate(90deg)
+    left: 0
+    &--sec
+      bottom: -40.5vw
+      left: get-vw(1400px)
+    &--th
+      bottom: -29.5vw
+      left: get-vw(1700px)
+      transform: rotate(360deg)
+
+  .dots
+    &--1
+      top: get-vw(200px)
+      left: 5vw
+    &--2
+      left: get-vw(1650px)
+      top: get-vw(350px)
+  .rectangle
+    top: get-vw(500px)
+    right: 0
+
+
+.wrapper
+  height: 650px
+  width: 58.5%
+  margin-left: get-vw(400px)
+
+.custom-calendar-full
+  width: 100.7%
+  left: get-vw(-5px)
+.custom-month
+  font-family:  'Raleway-regular', sans-serif
+  letter-spacing: 0
+  width: 100%
+  position: absolute
+  left: -22px
+  text-align: center
+  &-year
+    width: 300px
+    padding: 0
+
+.custom-header
+  padding: get-vw(5px) 0 0 get-vw(60px)
+  #custom-year, #custom-current
+    display: none
+  h3
+    text-transform: none
+    font-size: get-vw(21px)
+    color: #fff
+    width: 5%
+    position: relative
+    padding-right: 6.5vw
+  nav
+    width: get-vw(180px)
+    position: absolute
+    left: get-vw(-50px)
+    top: 0
+    span
+      background: url(../img/svg/arrow-inact.svg)
+      background-repeat: no-repeat
+      background-position: 50% 50%
+      background-size: 35%
+      box-shadow: none
+      &:hover
+        background: url(../img/svg/arrow.svg)
+        background-repeat: no-repeat
+        background-position: 50% 50%
+        background-size: 35%
+        box-shadow: none
+      &:before
+        display: none
+      &:nth-child(1)
+        transform: rotate(-180deg)
+      &:nth-child(2)
+        position: absolute
+        right: 0
+        top: get-vw(3px)
+
+
+.fc-calendar
+  background: #191F70
+  border-radius: 0
+  .fc-body
+    padding: 0
+    height: 100%
+    border: 1px solid #253180
+    div
+      cursor: default
+  .fc-row:first-child, .fc-row:last-child
+    & div:first-child
+      border-radius: 0
+  .fc-row:last-child, .fc-row:last-child
+    & div:first-child
+      border-radius: 0
+    & div:last-child
+      border-radius: 0
+  .fc-row>div
+    box-shadow: inset 1px -1px 0 #253180
+  .fc-row
+    box-shadow: inset 0 -1px 0 #253180
+    & div>span.fc-date
+      font-size: get-vw(16px)
+      font-weight: 500
+    & div
+      position: relative
+      transition: background .2s ease-in-out
+      &.fc-today
+        background: #202977
+        box-shadow: inset 1px -1px 0 #253180
+        &:after
+          background: none
+    & div div
+      position: relative
+      margin: 1px
+    & div.predicted
+      position: absolute
+      top: 1px
+      left: 1px
+      right: 2px
+      border: 1px
+      height: 96%
+      border-radius: 5px
+      background: linear-gradient(-180deg, #2DE2F7, #047CED)
+
+.invisible
+  display: none
+
+.visible
+  display: block
+
+.predicted
+  &__day
+    font-weight: 500
+    font-size: get-vw(17px)
+  &__wrapper
+    padding: 5px
+  &__text
+    font-family: 'Raleway-light', sans-serif
+    font-size: get-vw(12px)
+    padding-top: get-vw(15px)
+  &__rate
+    font-size: get-vw(36px)
+    font-weight: 500
+    position: relative
+    top: get-vw(-7px)
+
+.predict
+  &__btn
+    background-color: #2e3ce0
+    border: none
+    color: white
+    padding: 15px 32px
+    text-align: center
+    text-decoration: none
+    display: inline-block
+    font-size: get-vw(16px)
+    margin: 4px 2px
+    cursor: pointer
+
+  &__input
+    position: relative
+    left: get-vw(15px)
+    height: get-vw(130px)
+    width: get-vw(225px)
+    background: transparent
+    color: #fff
+    border: none
+    font-size: get-vw(48px)
+    font-weight: 700
+    letter-spacing: get-vw(20px)
+    outline: none
+    &Bg
+      position: absolute
+      z-index: -1
+      top: get-vw(135px)
+      width: get-vw(44px)
+      height: get-vw(70px)
+      &--1
+        left: get-vw(111px)
+      &--2
+        left: get-vw(160px)
+      &--3
+        left: get-vw(237px)
+      &--4
+        left: get-vw(287px)
+    &Wrapper
+      position: relative
+      text-align: center
+      .heading
+        font-size: get-vw(36px)
+        @extend %textGrad
+        margin-bottom: 10px
+      p
+        font-size: get-vw(16px)
+        width: 95%
+        margin: 0 auto
+      .btn
+        text-transform: none
+        font-size: 18px
+        font-weight: 700
+        padding: get-vw(20px) get-vw(50px)
+        box-shadow: 0px 0px 0px 5px rgba(153,20,202,0.5), 0px 0px 0px 10px rgba(153,20,202,0.2)
+        &:disabled
+          opacity: .5
+
+
+  &__popUp
+    position: fixed
+    z-index: 50
+    top: 50%
+    left: 50%
+    width: 30%
+    transform: translate(-50%, -50%)
+    padding: get-vw(50px) get-vw(70px) get-vw(30px)
+    background-image: linear-gradient(90deg, #17014C, #1B3F97)
+    border-radius: 10px
+
+.shepherd-element
+  &[x-placement^=right]
+    z-index: 50
+    margin-left: 25px
+    animation: opacity .5s ease-in-out
+    .popper__arrow
+      left: -10px
+  .popper__arrow
+    border: 10px solid transparent
+  .shepherd-content
+    .shepherd-text p
+      font-size: 15px
+      font-weight: 600
+    footer
+      padding: 0 1.5em 1.5em
+      .shepherd-buttons
+        &:first-child
+          a
+           margin-right: 15px
+        li
+         .shepherd-button
+           background: linear-gradient(-185deg,#cd208e,#9914ca)
+           transition: box-shadow .2s ease-in-out, transform .2s ease-in-out
+           font-weight: 500
+           border: 1px solid rgba(247,247,247,.08)
+           letter-spacing: 0
+           text-transform: none
+           &:active
+             transform: translateY(1px)
+
+
+    .shepherd-text
+      padding: 0.5em 1.5em 1em
+  &.shepherd-has-title
+    .shepherd-content
+      header
+        background: #fff
+        padding: 1.1em 1.3em 0
+  &.shepherd-has-cancel-link
+    .shepherd-content
+      header
+        h3
+          font-size: 14px
+          font-weight: 600
+          color: rgba(0,0,0,.2)
+          padding-left: 3px
+          span
+            font-size: 12px
+
+@keyframes opacity
+  0%
+    opacity: 0
+  100%
+    opacity: 1

@@ -1,0 +1,191 @@
+.header
+  position: relative
+  overflow: hidden
+  &__wrapper
+    display: flex
+    align-items: center
+  &__logo
+    padding: 0 0 get-vw(35px) get-vw(70px)
+    margin-right: auto
+    img
+      width: get-vw(100px)
+  &__nav
+    a
+      font-family: 'Raleway', sans-serif
+      font-size: get-vw(16px)
+      font-weight: 500
+      color: #fff
+      padding: get-vw(15px) get-vw(80px) get-vw(15px) 0
+      transition: color 0.2s ease-in-out
+    .nav__list
+      &:hover
+        a
+          color: #A7C3F2
+          &:hover
+            color: #fff
+  &__menu
+    width: 33px
+    height: 25px
+    position: relative
+    overflow: hidden
+    top: 0
+    left: 0
+
+    &Wrapper
+      position: relative
+      width: 33px
+      height: 25px
+      margin-right: get-vw(50px)
+      z-index: 55
+      overflow: hidden
+      cursor: pointer
+    &:hover
+      .line--3
+        left: 0
+    .line
+      position: absolute
+      top: 0
+      left: 0
+      width: 33px
+      height: 3px
+      background: #fff
+      border-radius: 50px
+      transition: left 0.1s ease-in-out
+      &--2
+        top: 10px
+      &--3
+        top: 20px
+        left: 50%
+
+    &.opened
+      &.header__menu
+      .line
+        &--1
+          left: 0
+          right: 0
+          top: 10px
+          transform: rotateZ(-45deg)
+        &--2
+          opacity: 0
+          visibility: hidden
+        &--3
+          left: 0
+          right: 0
+          top: 10px
+          transform: rotateZ(45deg)
+  .menu
+    position: fixed
+    z-index: 51
+    top: 0
+    width: 28%
+    height: 120vh
+    right: 0
+    transform: translateX(150px)
+    background: linear-gradient(to right, #1B3F97, #17014C)
+    opacity: 0
+    visibility: hidden
+    a
+      color: #fff
+      transition: 0.2s color ease-in-out
+    &__wrapper
+      padding: get-vw(100px) 0 0 get-vw(60px)
+
+    &__text
+      min-height: get-vw(180px)
+
+    &__nav
+      display: flex
+      flex-direction: column
+      line-height: 2
+      a
+        font-size: get-vw(36px)
+        &:last-child
+          color: #2de2f7
+          &:hover
+            color: #2de2f7
+      &:hover
+        a
+          color: #739dcc
+          &:hover
+            color: #fff
+          &:last-child
+            &:hover
+              color: #2de2f7
+    &__item
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        height: 2px
+        width: 15px
+        left: get-vw(-60px)
+        top: 50%
+        transform: translateY(-50%)
+        background: linear-gradient(90deg, #047ced 0, #2de2f7 100%)
+        transition: width .3s ease-in-out
+      &:hover:before
+        width: 30px
+
+    .lang__switch
+      position: absolute
+      bottom: get-vw(220px)
+      color: rgba(247,247,247,.7)
+      a
+        color: rgba(247,247,247,.7)
+        &:first-of-type
+          position: relative
+          padding-right: get-vw(40px)
+          &:after
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: get-vw(20px)
+            width: 2px
+            height: 15px
+            background: linear-gradient(0deg, #047ced 0, #2de2f7 100%)
+      .lang
+        font-size: 14px
+        margin-bottom: get-vw(10px)
+        &Active
+          color: #fff
+
+    .name
+      font-size: get-vw(24px)
+      opacity: .7
+    .logOut
+      border: none
+      outline: none
+      background: transparent
+      font-size: get-vw(21px)
+      padding: get-vw(35px) 0 get-vw(60px)
+      &.invisible
+        display: none
+
+.grid__wrapper
+    position: fixed
+    z-index: -1
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    .grid
+      position: absolute
+      width: 1px
+      height: 100%
+      background-color: rgba(247,247,247,0.1)
+      z-index: -1
+      &1
+        left: get-vw(50px)
+      &2
+        left: get-vw(414px)
+      &3
+        left: get-vw(778px)
+      &4
+        left: get-vw(1142px)
+      &5
+        left: get-vw(1506px)
+      &6
+        left: get-vw(1870px)
+
+

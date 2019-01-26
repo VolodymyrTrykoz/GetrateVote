@@ -1,0 +1,88 @@
+<!-- index.html/nunjucks -->
+{% extends "layout.html" %}
+{% block content %}
+{% include "partials/grid.html" %}
+{% include "partials/header.html" %}
+<section class="gift">
+    <div class="container">
+        <h2 data-translatable class="heading">Выиграть приз легко: // Виграти приз легко:</h2>
+        <div class="gift__wrapper">
+            <div class="gift__box">
+                <div class="gift__item">
+                    <div class="gift__left">
+                        <div data-translatable class="gift__step">Шаг 1 // Крок1</div>
+                        <div data-translatable class="gift__action">Авторизируйся // Авторизуйся</div>
+                    </div>
+                    <div class="gift__right">
+                        <div data-translatable class="gift__descr">Для участия в акции авторизуйся на странице Dekurs с помощью Facebook // Для участі в акції авторизуйся на сторінці Dekurs за допомогою Facebook</div>
+                    </div>
+                </div>
+                <div class="gift__item">
+                    <div class="gift__left">
+                        <div data-translatable class="gift__step">Шаг 2 // Крок 2</div>
+                        <div data-translatable class="gift__action">Предсказывай // Прогнозуй</div>
+                    </div>
+                    <div class="gift__right">
+                        <div data-translatable class="gift__descr">
+                            Выбери дату для предсказания в календаре введи твой предполагаемый курс продажи доллара на указанную дату // Обери дату для прогнозу в календарі та введи свій спрогнозований курс продажу долару на вказану дату
+                        </div>
+                    </div>
+                </div>
+                <div class="gift__item">
+                    <div class="gift__left">
+                        <div data-translatable class="gift__step">Шаг 3 // Крок 3</div>
+                        <div data-translatable class="gift__action">Делись // Ділись</div>
+                    </div>
+                    <div class="gift__right">
+                        <div data-translatable class="gift__descr">
+                            <span>Жми "Поделиться" в Facebook. Обязательно убедись, что твой профиль открыт, поставь хештег <span class="aqua">#курснавыигрыш</span>  и отметь одного друга</span> // <span> Натисни кнопку "Поділитись" у Facebook. Обов'язково переконайся, що твій профіль відкритий, постав хештег <span class="aqua">#курснавиграш</span> та відміть одного друга</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gift__item">
+                    <div class="gift__left">
+                        <div data-translatable class="gift__step">Шаг 4 // Крок 4</div>
+                        <div data-translatable class="gift__action">Побеждай // Перемагай</div>
+                    </div>
+                    <div class="gift__right">
+                        <div data-translatable class="gift__descr">
+                            За каждое правильное предсказание гарантированно получи Приз. // За кожен вірний прогноз гарантовано отримай Приз.
+                        </div>
+                    </div>
+                </div>
+                <div class="gift__item">
+                    <div class="gift__left">
+                        <div data-translatable class="gift__step">Шаг 5 // Крок 5</div>
+                        <div data-translatable class="gift__action">Продолжай // Продовжуй</div>
+                    </div>
+                    <div class="gift__right">
+                        <div data-translatable class="gift__descr">
+                            Продолжай делать предсказания, но уже на новые даты. Чем больше предсказаний тем больше призов! // Продовжуй робити прогнози, але вже на нові дати. Чим більше прогнозів тим більше призів!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gift__box">
+                <h2 data-translatable class="heading"><span>Побалуй себя <br> новым гаджетом!</span> // <span>Побалуй себе <br> новим гаджетом!</span></h2>
+                <div data-translatable class="gift__conditions">
+                    <span>В акции <span class="aqua">#курснавыигрыш</span> от Dekurs каждый день разыгрывается Приз – сертификат на 400 гривен в магазин «Цитрус»</span> // <span>В акції <span class="aqua">#курснавиграш</span> від Dekurs кожного дня розігрується Приз – сертифікат на 400 гривень в магазин «Цитрус»</span>
+                </div>
+                <img src="./img/gift.png" alt="">
+                <a data-translatable href="calendar.html" class="btn">Сделать ставку // Зробити ставку </a>
+            </div>
+        </div>
+    </div>
+    <div class="rectangle"></div>
+    <img src="./img/svg/dots.svg" alt="svg" class="dots dots--1">
+    <img src="./img/svg/dots.svg" alt="svg" class="dots dots--2">
+    <img src="./img/svg/snake-op.svg" alt="svg" class="snakeRotate">
+    <img src="./img/svg/snake-op.svg" alt="svg" class="snakeRotate snakeRotate--sec">
+    <img src="./img/svg/snake-op.svg" alt="svg" class="snakeRotate snakeRotate--th">
+</section>
+
+{% include "partials/footer.html" %}
+<script src='libs/jquery-3.3.1/jquery-3.3.1.min.js'></script>
+<script src='libs/gsap/src/minified/TweenMax.min.js'></script>
+<script src='libs/dom-i18n/dom-i18n.js'></script>
+<script src='js/scripts.min.js' defer></script>
+{% endblock %}
